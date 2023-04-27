@@ -1,3 +1,25 @@
 .header {
-	color: blue;
+	border-bottom: 1px solid black;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+a {
+	text-decoration: none;
+	color:rgb(141, 145, 148)
+}
+
+.logo {
+	width: 50px;
+}
+
+.link {
+	font-weight: 700;
+	font-size: 18px;
+}
+.active {
+	color:blue;
+	text-decoration: none;
 }
