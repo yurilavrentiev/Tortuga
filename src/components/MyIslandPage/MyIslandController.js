@@ -44,5 +44,5 @@ class MyIslandController {
       });
   }
 }
-const islandController = new MyIslandController();
-export default islandController;
+const controller = new MyIslandController();
+export {controller};

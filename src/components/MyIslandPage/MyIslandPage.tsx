@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./MyIslandPage.module.css";
 import { IslandMap } from "./IslandMap/IslandMap";
 import { observer } from "mobx-react-lite";
-import controller from "./MyIslandController";
+import {controller} from "./MyIslandController";
 
 export const MyIslandPage = observer(() => {
   const INPUT_PLACEHOLDER = "Введи адрес острова";
