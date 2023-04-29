@@ -5,6 +5,9 @@ class MyIslandController {
 	inputValue = "";
 	address = "";
 	islandMap = DEFAULT_ISLAND_MAP_MATRIX;
+	totalIslands = 0;
+	totalProfit = 0;
+	totalIslandCost = 0;
 
 	constructor() {
 		makeAutoObservable(this);
@@ -30,7 +33,7 @@ class MyIslandController {
 
 	fetchIslandMap() {
 		fetch("https://api2.quota.team/data/islandsMaps.json")
-			.then((response) => response.json())
+			.then(response => response.json())
 			.then((response) => {
 				runInAction(() => {
 					if (response[this.address]) {
@@ -42,6 +45,17 @@ class MyIslandController {
 					}
 				});
 			});
+	}
+	fetchIslandsInfo() {
+		fetch("https://api2.quota.team/data/islandsInfo.json")
+		.then(response => response.json())
+		.then((response) =>{
+			runInAction(() => {
+				this.totalIslands = response.totalIslands;
+				this.totalIslandCost = response.totalIslandsCost.toFixed(2);
+				this.totalProfit = response.totalProfitWeek.toFixed(2);
+			})
+		})
 	}
 }
 

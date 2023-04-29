@@ -10,3 +10,12 @@
 	margin: 10px auto;
 	height: 300px;
 }
+
+.islandsInfo {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+p {
+	margin: 2px;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./IslandMap.module.css";
+import { mapIsland } from "../../../helper/functions";
 
 export const IslandMap = (props: {
 	islandMap: string[][];
@@ -12,14 +13,7 @@ export const IslandMap = (props: {
 			<h3>{address}</h3>
 			{islandMap.map((mapColumnElements) => {
 
-				return (
-					<div>
-						{mapColumnElements.map((mapRowElements) => {
-              
-							return <span>- {mapRowElements} -</span>;
-						})}
-					</div>
-				);
+				return <div className={styles.row}>{mapColumnElements.map(mapIsland)}</div>;
 			})}
 		</div>
 	);
