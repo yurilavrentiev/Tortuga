@@ -1,6 +1,6 @@
 .header {
 	border-bottom: 1px solid black;
-	display:flex;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-left: 100px;
@@ -8,7 +8,7 @@
 }
 a {
 	text-decoration: none;
-	color:rgb(141, 145, 148)
+	color: rgb(141, 145, 148);
 }
 
 .logo {
@@ -20,6 +20,6 @@ a {
 	font-size: 18px;
 }
 .active {
-	color:blue;
+	color: blue;
 	text-decoration: none;
 }

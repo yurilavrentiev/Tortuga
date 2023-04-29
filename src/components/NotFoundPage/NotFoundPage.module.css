@@ -4,9 +4,9 @@
 	align-items: center;
 	flex-direction: column;
 }
-
-.logo {
-	width: 60%;
-	margin: 10px auto;
-	height: 300px;
+.link {
+	color: blue;
+}
+.link:hover {
+	color: rgb(40, 141, 230);
 }
