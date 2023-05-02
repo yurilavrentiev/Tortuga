@@ -5,15 +5,18 @@ import { mapIsland } from "../../../helper/functions";
 export const IslandMap = (props: {
 	islandMap: string[][];
 	address: string;
+	name: string | null;
 }) => {
-	const { islandMap, address } = props;
+	const { islandMap, address, name: islandName } = props;
 
 	return (
 		<div className={styles.container}>
-			<h3>{address}</h3>
+			<h3>{islandName}</h3>
+			<p>{address}</p>
 			{islandMap.map((mapColumnElements) => {
-
-				return <div className={styles.row}>{mapColumnElements.map(mapIsland)}</div>;
+				return (
+					<div className={styles.row}>{mapColumnElements.map(mapIsland)}</div>
+				);
 			})}
 		</div>
 	);

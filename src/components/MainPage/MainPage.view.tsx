@@ -7,8 +7,9 @@ import { observer } from "mobx-react";
 const controller = new MyIslandController();
 
 export const MainPage = observer(() => {
+	
 	useEffect(() => {
-		controller.fetchIslandsInfo();
+		controller.fetchTotalIslandsInfo();
 	}, []);
 
 	return (
