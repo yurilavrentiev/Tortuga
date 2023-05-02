@@ -1,4 +1,8 @@
 
+const activeClassName = (isActive, className) => {
+	return isActive ? className : null;
+};
+
 const mapIsland = (element) => {
 	switch (element) {
 		case "i001":
@@ -300,3 +304,4 @@ const mapIsland = (element) => {
 };
 
 export {mapIsland};
+export { activeClassName };
