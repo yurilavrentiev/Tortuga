@@ -1,0 +1,18 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.input {
+	width: 150px;
+	margin: 10px auto;
+	text-align: right;
+}
+.btn {
+	border-radius: 5px;
+	background-color: rgb(141, 145, 148);
+	color: white;
+	cursor: pointer;
+}
